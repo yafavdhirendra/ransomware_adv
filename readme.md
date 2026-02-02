@@ -14,3 +14,5 @@ This project is ideal for learning **practical cryptography, secure file handlin
 * 🔓 Safe decryption only if the correct password is provided
 * 🧂 Uses **salt + Scrypt KDF** to derive a secure key
 * 🖥️ Clean and interactive **Tkinter GUI**
+
+<hr><b>AUTHOR:- Dhirendra Yadav<br>1st sem Project..</br> </b>
