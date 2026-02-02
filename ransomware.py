@@ -24,3 +24,14 @@ def derive_key(password, salt):
         backend=default_backend()
     )
     return base64.urlsafe_b64encode(kdf.derive(password.encode()))
+
+# 📁 collect files (recursive)
+def collect_files(folder):
+    file_list = []
+    for root, dirs, files in os.walk(folder):
+        dirs[:] = [d for d in dirs if d not in SKP_DIRS]
+        for f in files:
+            if f.endswith(".py") or f in SKIP_FILES:
+                continue
+            file_list.append(os.path.join(root, f))  # full path
+    return file_list
