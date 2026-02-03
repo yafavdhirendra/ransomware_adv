@@ -16,3 +16,12 @@ This project is ideal for learning **practical cryptography, secure file handlin
 * 🖥️ Clean and interactive **Tkinter GUI**
 
 <hr><b>AUTHOR:- Dhirendra Yadav<br>1st sem Project..</br> </b>
+<hr>
+<br>## 🛠️ Technologies Used
+
+* **Python 3**
+* **Tkinter** – GUI
+* **cryptography** library
+
+  * `Fernet` (AES-based symmetric encryption)
+  * `Scrypt` (password-based key derivation)</br></hr>
