@@ -45,3 +45,21 @@ def select_file():
     if file:
         selected_files.append(file)
         listbox.insert(tk.END, file)
+
+# 📁 select folder
+def select_folder():
+    selected_files.clear()
+    listbox.delete(0, tk.END)
+
+    folder = filedialog.askdirectory()
+    if not folder:
+        return
+
+    files = collect_files(folder)
+    if not files:
+        messagebox.showerror("Error", "No valid files found")
+        return
+
+    for f in files:
+        selected_files.append(f)
+        listbox.insert(tk.END, f)
