@@ -77,3 +77,20 @@ def encrypt_files():
         return
 
     files = [listbox.get(i) for i in chosen]
+
+    # generate salt if not exists
+    if not os.path.exists("salt.bin"):
+        salt = os.urandom(16)
+        with open("salt.bin", "wb") as s:
+            s.write(salt)
+    else:
+        with open("salt.bin", "rb") as s:
+            salt = s.read()
+
+    key = derive_key(password, salt)
+    fernet = Fernet(key)
+
+    for file in files:
+        try:
+            with open(file, "rb") as f:
+                data = f.read()
