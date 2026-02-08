@@ -47,7 +47,8 @@ Tkinter comes pre-installed with most Python distributions.
 
 
 ## License
-
+This project is licensed under MIT License. See more about [License](/LICENSE).
 
 ## Author
-Dhirendra Yadav<br>1st sem Project..</br> </b>
+- Dhirendra Yadav - First Year Student
+- Softwarica College of IT and E-Commerce
