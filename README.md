@@ -3,6 +3,9 @@
 A Python GUI application that allows you to **encrypt and decrypt files or entire folders** using a **password-derived key**. Built with **Tkinter** for the interface and **cryptography (Fernet + Scrypt)** for strong encryption.
 This project is ideal for learning **practical cryptography, secure file handling, and GUI development**, especially for **cybersecurity students**.
 
+## Learning Objectives
+[ADD LEARNING OBJECTIVES FROM THE PROJECT]
+
 ## Features
 - **Password-based encryption** (no hardcoded secret key)
 - Encrypt / decrypt **single files**
